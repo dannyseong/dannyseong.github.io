@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding *args and **kwargs in Python"
-date: 2023-03-26 09:19:00 +1000
+date: 2023-03-26
 categories: jekyll update
 author: Daehoon Seong
 ---
