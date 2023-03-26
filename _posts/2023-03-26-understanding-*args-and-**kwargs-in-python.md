@@ -3,6 +3,7 @@ layout: post
 title: "Understanding *args and **kwargs in Python"
 date: 2023-03-26 09:19:00 +1000
 categories: jekyll update
+author: Daehoon Seong
 ---
 
 In Python, we may have come across the terms `*args` and `**kwargs`. While these two concepts are similar in some ways, they have distinct differences. In this article, we will explore the definition, differences, and use cases of \*args and `**kwargs`.
