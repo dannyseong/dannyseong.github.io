@@ -72,10 +72,8 @@ Like the above examples, `*args` and `**kwargs` are useful for accepting a varia
 
 1. Flexibility
    Using \*args and \*\*kwargs allows for greater flexibility when writing functions. Since they can accept any number of arguments, you can write a single function that can be used for a wide range of purposes.
-   <br>
 2. Code Reusability
    By using \*args and \*\*kwargs, you can write a function that can be reused in different parts of your codebase. Since the function can accept a variable number of arguments, you can use it for different purposes without having to write a new function each time.
-   <br>
 3. Cleaner Code
    When using \*args and \*\*kwargs, you can avoid writing repetitive code to handle arguments. Instead, you can use loops and conditionals to handle the arguments dynamically, making your code cleaner and more readable.
 
@@ -83,12 +81,55 @@ Like the above examples, `*args` and `**kwargs` are useful for accepting a varia
 
 1. Use Descriptive Variable Names
    When using \*args and \*\*kwargs, it's important to use descriptive variable names that make it clear what the arguments represent. This can help improve the readability and maintainability of your code.
-   <br>
 2. Avoid Overusing *args and \*\*kwargs
    While *args and \*\*kwargs can be useful in many situations, overusing them can make your code more complex and harder to understand. It's important to use them only when necessary and to consider alternative solutions when possible.
-   <br>
 3. Provide Default Values for Keyword Arguments
    When using \*\*kwargs, it's a good practice to provide default values for the keyword arguments. This can help prevent errors and make your code more robust.
+
+## Exceptional Use Examples
+
+1. Unpacking parts of an iterable
+
+```python
+ a, *b, c = [3, 6, 9, 12, 15]
+ print(b)
+ # output: [6, 9, 12]
+```
+
+2. Inside of built-in functions
+
+```python
+start_and_stop = [3, 6]
+
+range_values = range(*start_and_stop)
+print(list(range_values))
+# output: [3, 4, 5]
+```
+
+3. Merging iterables
+
+```python
+my_tuple = (3, 6, 9)
+merged_tuple = (0, *my_tuple, 12)
+print(merged_tuple)
+# output: (0, 3, 6, 9, 12)
+```
+
+4. Combining unpacking and packing
+
+```python
+num_collection = [3, 6, 9]
+
+def power_two(*nums):
+  for num in nums:
+    print(num**2)
+
+power_two(*num_collection)
+# output:
+# 9
+# 36
+# 81
+```
 
 ## Conclusion
 
