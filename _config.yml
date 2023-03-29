@@ -3,7 +3,7 @@ title: FOOTPRINTS OF MY CHALLENGE🍎
 tagline: "Computer Universe"
 description: "Daehoon, Seong who is passionate for this domain."
 url: http://seongdaehoon.github.io
-baseurl: ""
+baseurl: "http://seongdaehoon.github.io"
 paginate: 5
 permalink: pretty
 
